@@ -14,7 +14,7 @@ drained = st.selectbox("Do you Feel Drained After Socializing?",[0,1])
 friendcirle = st.number_input("Enter Friend Circle Size")
 post = st.number_input("Enter Post Frequency")
 
-st.info("Has a Accuracy of 93% on Test Data")
+st.info("Has a Accuracy of 92% on Test Data")
 
 if st.button("Analyse"):
     pred = model.predict([[time,stage,socialevent,going,drained,friendcirle,post]])
