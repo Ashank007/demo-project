@@ -1,7 +1,10 @@
+import os
 import streamlit as st
 import pickle
 
-with open("news.pkl",'rb') as f:
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "news.pkl")
+
+with open(MODEL_PATH,'rb') as f:
     model = pickle.load(f)
 
 st.title("Real Vs Fake News Classifer")
